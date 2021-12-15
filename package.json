@@ -4,8 +4,13 @@
   "description": "Test bed for GitHub actions to release and publish a package.",
   "main": "index.js",
   "scripts": {
+    "release": "release-it --ci --config .release-it.js",
     "test": "echo \"No tests\""
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^3.3.0",
+    "release-it": "^14.11.8"
+  }
 }

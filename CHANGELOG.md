@@ -1,3 +1,5 @@
+## [1.0.7-alpha.0](https://github.com/oreillymedia/test-github-actions/compare/v1.0.6...v1.0.7-alpha.0) (2021-12-16)
+
 ## [1.0.6](https://github.com/oreillymedia/test-github-actions/compare/v1.0.5...v1.0.6) (2021-12-16)
 
 ## [1.0.5](https://github.com/oreillymedia/test-github-actions/compare/v1.0.4...v1.0.5) (2021-12-16)

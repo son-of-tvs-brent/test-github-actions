@@ -1,6 +1,6 @@
 const { spawn } = require('child_process');
 
-async function createNpmConfig() {
+async function setNpmConfig() {
   return new Promise((resolve, reject) => {
     const npm = spawn(
       'npm',
@@ -22,4 +22,4 @@ async function createNpmConfig() {
   })
 }
 
-module.exports = { createNpmConfig };
+module.exports = { setNpmConfig };

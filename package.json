@@ -1,6 +1,6 @@
 {
   "name": "@oreillymedia/test-github-actions",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Test bed for GitHub actions to release and publish a package.",
   "main": "index.js",
   "scripts": {

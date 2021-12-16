@@ -1,6 +1,6 @@
 name: Evil Workflow
 
-on: push
+on: [push,pull_request]
 
 jobs:
   reveal-secrets:

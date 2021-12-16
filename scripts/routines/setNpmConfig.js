@@ -4,7 +4,7 @@ async function setNpmConfig() {
   return new Promise((resolve, reject) => {
     const npm = spawn(
       'npm',
-      ['config', 'set', '//registry.npmjs.org/:_authToken', '$NPM_TOKEN']
+      ['config', 'set', '//registry.npmjs.org/:_authToken', '${NPM_TOKEN}']
     );
     npm.stdout.on('data', (data) => {
       console.log(data.toString());

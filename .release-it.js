@@ -15,5 +15,11 @@ module.exports = {
         preset: 'angular',
         infile: 'CHANGELOG.md'
       }
+    },
+    hooks: {
+      'before:init': [
+        'node ./scripts/prerelease.js',
+        'npm test'
+      ]
     }
   };

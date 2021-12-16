@@ -5,11 +5,10 @@ module.exports = {
       push: true,
     },
     npm: {
-      publish: false
+      publish: true
     },
     github: {
-      release: true,
-      draft: false
+      release: true
     },
     plugins: {
       '@release-it/conventional-changelog': {

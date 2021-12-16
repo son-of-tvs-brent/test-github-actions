@@ -22,7 +22,7 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - run: npm ci --silent
-      - run: npm run release ${{ fromJSON('["", "-- --pre-release alpha"]')[github.event.inputs.npmTag == 'alpha'] }}
+      - run: npm run release ${{ fromJSON('["", "-- --preRelease alpha"]')[github.event.inputs.npmTag == 'alpha'] }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
